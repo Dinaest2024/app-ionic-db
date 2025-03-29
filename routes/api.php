@@ -9,4 +9,5 @@ use App\Http\Controllers\GiftController;
 //})->middleware('auth:sanctum');
 
 //Route::get('create_gift', [GiftController::class, 'store'])
-Route::resourcel('/gift', [GiftController::class])
+//Route::resourcel('/gift', [GiftController::class])
+Route::resource('/gift', GiftController::class);
