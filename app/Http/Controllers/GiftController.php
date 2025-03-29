@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Gift;
+use App\Models\Gift;
 use Validator;
 
 class GiftController extends Controller
@@ -13,7 +13,10 @@ class GiftController extends Controller
      */
     public function index()
     {
-        //
+        $gifts = Gifts::get();
+         return Response([
+            'data' => $gifts,
+         ]) 
     }
 
     /**
@@ -59,7 +62,7 @@ class GiftController extends Controller
         'success' => 1,
         'data'=> $gift
 
-        ])
+        ]);
     }
 
     /**
