@@ -13,10 +13,14 @@ class GiftController extends Controller
      */
     public function index()
     {
-        $gifts = Gifts::get();
-         return Response([
+        $gifts = Gift::get();
+        
+        $server = config('app.server');
+
+        return Response([
             'data' => $gifts,
-         ]) 
+            'server_base_url' => $server, 
+        ]);
     }
 
     /**
