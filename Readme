@@ -1,0 +1,72 @@
+App Ionic
+
+Descripción
+Esta es una aplicación híbrida desarrollada con Ionic para el frontend y Laravel para el backend. La aplicación utiliza MySQL como base de datos y XAMPP como servidor local para la gestión de la base de datos y el backend.
+Este proyecto es un carrito de compras que permite a los usuarios navegar por un catálogo de productos, agregar artículos al carrito, eliminar y actualizar productos. 
+La aplicación también ofrece una interfaz de administración para gestionar productos, pedidos y usuarios.
+
+Instalación
+Requisitos previos
+Node.js y npm instalados
+Ionic CLI instalado (npm install -g @ionic/cli)
+Composer instalado
+XAMPP instalado y configurado
+MySQL configurado
+
+Instalación del Frontend (Ionic)
+Clonar el repositorio:
+git clone https://github.com/usuario/proyecto.git
+Acceder al directorio del frontend:
+cd proyecto/frontend
+
+Instalar dependencias:
+npm install
+Ejecutar la aplicación:
+ionic serve
+Instalación del Backend (Laravel)
+
+Acceder al directorio del backend:
+cd proyecto/backend
+Instalar dependencias:
+composer install
+Configurar el archivo .env con las credenciales de la base de datos.
+
+Generar la clave de la aplicación:
+php artisan key:generate
+Ejecutar las migraciones y sembrar la base de datos:
+php artisan migrate --seed
+
+Iniciar el servidor de Laravel:
+php artisan serve
+
+Uso de API con Postman
+
+Método GET
+Para obtener la lista de productos:
+Abrir Postman.
+
+Crear una nueva solicitud de tipo GET.
+Ingresar la URL del endpoint:
+http://localhost:8000/api/productos
+Hacer clic en Send y revisar la respuesta JSON.
+
+Método POST
+Para agregar un nuevo producto:
+Abrir Postman.
+Crear una nueva solicitud de tipo POST.
+Ingresar la URL del endpoint:
+http://localhost:8000/api/productos
+Hacer clic en Send y verificar la respuesta.
+
+Funcionalidades principales
+
+Home: Buscador y listados de productos.
+Profile: Name, email, opciones.
+Carrito de compras: Agregar, eliminar y actualizar productos en el carrito.
+
+
+Tecnologías utilizadas
+Frontend: Ionic, Angular
+Backend: Laravel
+Base de Datos: MySQL
+Servidor Local: XAMPP
