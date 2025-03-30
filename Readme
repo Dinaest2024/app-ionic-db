@@ -47,7 +47,7 @@ Abrir Postman.
 
 Crear una nueva solicitud de tipo GET.
 Ingresar la URL del endpoint:
-http://localhost:8000/api/productos
+https://127.0.0.1:8000/api/gift
 Hacer clic en Send y revisar la respuesta JSON.
 
 Método POST
@@ -55,7 +55,7 @@ Para agregar un nuevo producto:
 Abrir Postman.
 Crear una nueva solicitud de tipo POST.
 Ingresar la URL del endpoint:
-http://localhost:8000/api/productos
+https://127.0.0.1:8000/api/gift
 Hacer clic en Send y verificar la respuesta.
 
 Funcionalidades principales
